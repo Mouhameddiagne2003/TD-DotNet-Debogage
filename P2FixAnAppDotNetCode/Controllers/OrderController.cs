@@ -42,7 +42,7 @@ namespace P2FixAnAppDotNetCode.Controllers
 
         public ViewResult Completed()
         {
-            _cart.Clear();
+            // Cart is cleared in OrderService.UpdateInventory()
             return View();
         }
     }
